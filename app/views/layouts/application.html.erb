@@ -2,23 +2,26 @@
 <html>
 <head>
 
-  <title>BootstrappingRails</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <title>Yookonnect</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
   <h1 class= "companyname"> YooKonnecT </h1>
   <nav>
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'Team', team_path %>
-
+    <ul class= "navbar">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Team', team_path %></li>
+    </ul>
   </nav>
 
 <%= yield %>

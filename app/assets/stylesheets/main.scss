@@ -3,20 +3,60 @@
   text-align: center;
   margin: 0px;
   color: #ffffff;
+  padding: 20px;
 }
 
-nav{
-  text-align: center;
+.navbar {
+    list-style-type: none;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+    background-color: #ecf0f1;
 
+    padding: 10px 200px 10px 200px;
+
+    li {
+      display: inline;
+      font-size: 15px;
+      align-items: center;
+    }
+}
+
+.welcome_body{
+      align-items: center;
 }
 
 .picstitle {
-
   font-size: 20px;
-
+  text-align: center;
 }
 
-img {
-  width: 200px;
-  margin-left: 200px;
+.team_pics {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+
+  .james_pic, .enrique_pic {
+    width: 200px;
+  }
+}
+
+
+.connect_pic {
+  width: 250px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.signature {
+  text-align: center;
 }
